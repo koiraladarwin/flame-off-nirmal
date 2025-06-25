@@ -3,7 +3,7 @@ import React from "react";
 const IntroSection = () => {
   return (
     <>
-      <div className="relative h-screen w-full flex flex-col md:flex-row items-center justify-between overflow-hidden">
+      <div className="relative h-screen w-full flex flex-col md:flex-row items-center justify-between overflow-hidden bg-blue-100">
         <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-4 md:p-0">
           <img
             src="/img/cctv.png"
@@ -21,7 +21,7 @@ const IntroSection = () => {
             WE OFFER<span className="text-lime-600">S</span> MORE THAN A SIMPLE
             SECURITY SYSTEM
           </h1>
-          <button className="bg-black text-white px-6 py-3 w-fit font-medium hover:bg-gray-800 transition">
+          <button className="bg-black text-white px-6 py-3 w-fit font-medium hover:bg-gray-800 transition rounded-lg">
             View Details
           </button>
         </div>

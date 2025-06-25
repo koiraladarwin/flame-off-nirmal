@@ -27,7 +27,7 @@ const steps = [
 const Process = () => {
   return (
     <>
-      <div className=" text-white py-20 px-4 relative ">
+      <div className=" text-white py-20 px-4 relative  bg-blue-100">
         <h2 className="text-6xl text-black font-bold text-center mb-4">
           Our Process
         </h2>

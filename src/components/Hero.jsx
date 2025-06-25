@@ -16,7 +16,7 @@ const Hero = () => {
   const [loading, setLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
 
-  const totalVideos = 4;
+  const totalVideos = 1;
   const nextVdRef = useRef(null);
 
   const handleVideoLoad = () => {
@@ -97,7 +97,7 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-100"
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
@@ -108,7 +108,7 @@ const Hero = () => {
               >
                 <video
                   ref={nextVdRef}
-                  src={getVideoSrc((currentIndex % totalVideos) + 1)}
+                  src="videos/fire.mp4"
                   loop
                   muted
                   id="current-video"
@@ -121,7 +121,7 @@ const Hero = () => {
 
           <video
             ref={nextVdRef}
-            src={getVideoSrc(currentIndex)}
+            src="videos/fire.mp4"
             loop
             muted
             id="next-video"
@@ -129,9 +129,7 @@ const Hero = () => {
             onLoadedData={handleVideoLoad}
           />
           <video
-            src={getVideoSrc(
-              currentIndex === totalVideos - 1 ? 1 : currentIndex
-            )}
+            src="videos/fire.mp4"
             autoPlay
             loop
             muted
@@ -141,7 +139,7 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          G<b>A</b>MING
+          Fire<b> Saftey</b>
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
@@ -151,12 +149,12 @@ const Hero = () => {
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+              Explore <br /> The possibility of house saftey
             </p>
 
             <Button
               id="watch-trailer"
-              title="Watch trailer"
+              title="Explore"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
             />
@@ -165,7 +163,7 @@ const Hero = () => {
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        G<b>A</b>MING
+        S<b>A</b>FTEY
       </h1>
     </div>
   );

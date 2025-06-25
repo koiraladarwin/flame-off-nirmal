@@ -1,6 +1,34 @@
+import React, { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Carousel from "./ui/carousel";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export function CustomCarousel() {
+  const containerRef = useRef(null);
+  const carouselRef = useRef(null);
+
+  useGSAP(() => {
+    const ctx = gsap.context(() => {
+      // Animate entire carousel container
+      gsap.from(carouselRef.current, {
+        scale: 0.9,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const slideData = [
     {
       title: "Fire Response Vehicle",
@@ -29,8 +57,13 @@ export function CustomCarousel() {
   ];
 
   return (
-    <div className="relative overflow-hidden w-full h-full py-20 ">
-      <Carousel slides={slideData} />
+    <div
+      ref={containerRef}
+      className="relative overflow-hidden w-full h-full py-20"
+    >
+      <div ref={carouselRef}>
+        <Carousel slides={slideData} />
+      </div>
     </div>
   );
 }

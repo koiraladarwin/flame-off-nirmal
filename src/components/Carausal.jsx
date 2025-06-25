@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Carousel from "./ui/carousel";
+import AnimatedTitle from "./AnimatedTitle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,14 +57,23 @@ export function CustomCarousel() {
     },
   ];
 
-  return (
+
+return (
+  <section
+    ref={containerRef}
+    className="relative w-full pb-32  md:px-12 bg-[#f8f3e1] flex flex-col items-center"
+  >
+       <AnimatedTitle
+        title="Our Services"
+        containerClass="mt-5 mb-10 !text-black text-center"
+      />
+    
     <div
-      ref={containerRef}
-      className="relative overflow-hidden w-full h-full py-20"
+      ref={carouselRef}
+      className="w-full max-w-6xl"
     >
-      <div ref={carouselRef}>
-        <Carousel slides={slideData} />
-      </div>
+      <Carousel slides={slideData} />
     </div>
-  );
+  </section>
+);
 }

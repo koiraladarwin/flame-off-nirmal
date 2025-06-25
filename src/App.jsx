@@ -15,7 +15,8 @@ function App() {
       <About />
       {/* <Features />
       <Story />*/}
-      <CustomCarousel/>
+      <CustomCarousel />
+
       <Contact />
       <Footer />
     </main>

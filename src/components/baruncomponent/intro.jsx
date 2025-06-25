@@ -22,7 +22,7 @@ const IntroSection = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
-          toggleActions: "play none none reset",
+          toggleActions: "play reverse play reverse",
         },
       });
 
@@ -36,7 +36,7 @@ const IntroSection = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
-          toggleActions: "play none none reset",
+          toggleActions: "play reverse play reverse",
         },
       });
 
@@ -50,7 +50,7 @@ const IntroSection = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
-          toggleActions: "play none none reset",
+          toggleActions: "play reverse play reverse",
         },
       });
     }, sectionRef);

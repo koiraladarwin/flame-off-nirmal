@@ -5,6 +5,8 @@ import Features from "./components/Features";
 import Story from "./components/Story";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import IntroSection from "./components/baruncomponent/intro";
+import Process from "./components/baruncomponent/process";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <NavBar />
       <Hero />
       <About />
+      <IntroSection/>
+      <Process/>
       {/* <Features />
       <Story />*/}
       <Contact />

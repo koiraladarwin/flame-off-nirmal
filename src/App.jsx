@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import IntroSection from "./components/baruncomponent/intro";
 import Process from "./components/baruncomponent/process";
 import { CustomCarousel } from "./components/Carausal";
+import Notice from "./components/Notice";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       {/* <Features />
       <Story />*/}
       <CustomCarousel />
+      <Notice />
 
       <Contact />
       <Footer />

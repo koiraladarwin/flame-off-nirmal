@@ -61,7 +61,7 @@ export function CustomCarousel() {
 return (
   <section
     ref={containerRef}
-    className="relative w-full pb-32  md:px-12 bg-[#f8f3e1] flex flex-col items-center"
+    className="relative w-full pb-32  md:px-12 bg-[#e0e6fb] flex flex-col items-center"
   >
        <AnimatedTitle
         title="Our Services"

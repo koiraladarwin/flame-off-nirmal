@@ -99,7 +99,7 @@ const Hero = () => {
         id="video-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-100"
       >
-        <div>
+        <div className="h-screen bg-black z-10">
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
             <VideoPreview>
               <div
@@ -125,7 +125,7 @@ const Hero = () => {
             loop
             muted
             id="next-video"
-            className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
+            className="absolute-center invisible absolute z-20 size-64 object-cover object-center opacity-45"
             onLoadedData={handleVideoLoad}
           />
           <video
@@ -133,12 +133,12 @@ const Hero = () => {
             autoPlay
             loop
             muted
-            className="absolute left-0 top-0 size-full object-cover object-center"
+            className="absolute left-0 top-0 size-full object-cover object-center opacity-75"
             onLoadedData={handleVideoLoad}
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-orange-400 ">
           Oath to<b> Protect</b>
         </h1>
 
@@ -163,7 +163,7 @@ const Hero = () => {
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        S<b>A</b>FTEY
+        P<b>R</b>OTECT
       </h1>
     </div>
   );

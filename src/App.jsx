@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Story from "./components/Story";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { CustomCarousel } from "./components/Carausal";
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
       {/* <Features />
       <Story />*/}
       <Contact />
-      { /*<div className="fixed bottom-0 right-0 bg-red-400 z-10 mr-10 mb-10 w-[80px] h-[80px] rounded-full">
-      </div>
-      */}
+      <CustomCarousel/>
       <Footer />
     </main>
   );

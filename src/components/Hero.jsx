@@ -138,7 +138,7 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-orange-400 ">
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-red-500 ">
           Oath to<b> Protect</b>
         </h1>
 
@@ -156,7 +156,7 @@ const Hero = () => {
               id="watch-trailer"
               title="Explore"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
+              containerClass="bg-white flex-center gap-1"
             />
           </div>
         </div>

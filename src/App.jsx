@@ -15,6 +15,9 @@ function App() {
       {/* <Features />
       <Story />*/}
       <Contact />
+      { /*<div className="fixed bottom-0 right-0 bg-red-400 z-10 mr-10 mb-10 w-[80px] h-[80px] rounded-full">
+      </div>
+      */}
       <Footer />
     </main>
   );

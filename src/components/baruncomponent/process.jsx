@@ -30,8 +30,10 @@ const steps = [
 ];
 
 const Process = () => {
+
   const containerRef = useRef(null);
   const boxRefs = useRef([]);
+
 
   useGSAP(() => {
     const ctx = gsap.context(() => {
@@ -58,7 +60,7 @@ const Process = () => {
     <div
       id="process"
       ref={containerRef}
-      className="text-white py-20 px-4 relative bg-cyan-50 rounded-xl"
+      className="text-white py-20 px-4 relative bg-cyan-50 rounded-xl bg-blue-100"
     >
       <h2 className="text-6xl text-black font-bold text-center mb-4">
         Our Process

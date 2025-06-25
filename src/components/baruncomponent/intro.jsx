@@ -59,9 +59,10 @@ const IntroSection = () => {
   }, []);
 
   return (
+
     <div
       ref={sectionRef}
-      className="relative h-screen w-full flex flex-col md:flex-row items-center justify-between overflow-hidden"
+      className="relative h-screen w-full flex flex-col md:flex-row items-center justify-between overflow-hidden bg-blue-100"
     >
       {/* Image Section */}
       <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-4 md:p-0">
@@ -81,6 +82,7 @@ const IntroSection = () => {
         <div className="flex items-center gap-2 text-lg md:text-xl font-bold">
           <span className="bg-lime-500 text-white px-2 py-1">CCTV</span>
           <span className="bg-black text-white px-3 py-1">SURVEILLANCE</span>
+
         </div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold max-w-md">
           WE OFFE<span className="text-lime-600">R</span> MORE THAN A SIMPLE

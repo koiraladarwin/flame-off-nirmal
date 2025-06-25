@@ -17,8 +17,9 @@ function App() {
       <NavBar />
       <Hero />
       <About />
-      <IntroSection />
+
       <Process />
+      <IntroSection />
       {/* <Features />
       <Story />*/}
       <CustomCarousel />

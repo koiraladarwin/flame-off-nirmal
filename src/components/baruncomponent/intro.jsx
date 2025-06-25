@@ -129,7 +129,7 @@ useGSAP(() => {
     
 <div
   ref={sectionRef}
-  className="relative h-screen w-full flex flex-col md:flex-row items-center justify-between overflow-hidden bg-[#f8f3e1] px-4 md:px-12"
+  className="relative h-screen w-full flex flex-col md:flex-row items-center justify-between overflow-hidden bg-[#e0e6fb] px-4 md:px-12"
 >
   {/* Image Section */}
   <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-4 md:p-8">

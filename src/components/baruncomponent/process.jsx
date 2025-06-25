@@ -72,45 +72,51 @@ const Process = () => {
   }, []);
 
   return (
+
     <div
       id="process"
       ref={containerRef}
-      className="text-gray-900 pt-20 pb-40 px-4 relative bg-cyan-50 rounded-xl"
+      className="bg-[#f9fafb] text-gray-900 pt-20 pb-32 px-4 md:px-8 relative rounded-xl"
     >
       <AnimatedTitle
         title="Our Process"
-        containerClass="mt-5 mb-10 !text-black text-center"
+        containerClass="mb-14 text-center !text-black"
       />
 
       {/* Process Boxes */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {steps.map((step, idx) => (
+
           <div
             key={idx}
             ref={(el) => (boxRefs.current[idx] = el)}
-            className="bg-white text-gray-800 rounded-2xl w-full max-w-xs mx-auto p-6 border-2 border-black shadow-md hover:shadow-lg"
+            className="bg-white text-gray-800 rounded-xl w-full max-w-sm mx-auto p-8 border border-gray-300 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-sky-100 mb-4">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-sky-100 mb-6">
               {step.icon}
             </div>
-            <h3 className="text-lg font-bold mb-2 text-center">{step.title}</h3>
-            <p className="text-sm text-gray-600 text-center">{step.desc}</p>
+            <h3 className="text-xl font-semibold mb-3 text-center">
+              {step.title}
+            </h3>
+            <p className="text-base text-gray-600 text-center">{step.desc}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-16 max-w-4xl mx-auto px-12 py-6 bg-white border-2 border-black rounded-lg shadow-md flex items-center justify-center gap-4 select-none">
-        <p className="text-gray-900 text-2xl md:text-3xl font-medium leading-relaxed m-0">
+      {/* CTA Box */}
+      <div className="mt-20 max-w-4xl mx-auto px-8 py-6 bg-white border border-gray-300 rounded-lg shadow-sm flex flex-col md:flex-row items-center justify-center gap-4 select-none">
+        <p className="text-gray-800 text-xl md:text-2xl font-medium text-center md:text-left">
           Want to know more? It’s as easy as a call. Reach us at
         </p>
         <a
           href="tel:+984202009"
-          className="text-blue font-bold text-2xl md:text-3xl hover:text-sky-800 transition-colors duration-300 whitespace-nowrap"
+          className="text-blue-600 font-bold text-xl md:text-2xl hover:text-blue-800 transition-colors duration-300 whitespace-nowrap"
         >
           (00) 200 123456789
         </a>
       </div>
     </div>
+
   );
 };
 
